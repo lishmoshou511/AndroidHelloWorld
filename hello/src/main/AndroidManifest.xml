@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lish.helloworld.app" >
+
+    <!-- Required Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.lish.helloworld.app.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lish.helloworld.app.EmailActivity"
+            android:label="@string/email_activity_name" >
+        </activity>
+        <activity
+            android:name="com.lish.helloworld.app.DataTransferActivity"
+            android:label="@string/title_activity_data_transfer" >
+        </activity>
+        <activity
+            android:name="com.lish.helloworld.app.DataTransferSubActivity"
+            android:label="@string/title_activity_data_transfer_sub" >
+        </activity>
+        <activity
+            android:name="com.lish.helloworld.app.DataTransferReturnActivity"
+            android:label="@string/title_activity_data_transfer_return" >
+        </activity>
+        <activity
+            android:name="com.lish.helloworld.app.ServiceActivity"
+            android:label="@string/title_activity_service" >
+        </activity>
+
+	    <service android:enabled="true" android:name=".TrackService"/>
+    </application>
+
+</manifest>

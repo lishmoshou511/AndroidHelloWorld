@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Helloworld</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="reset">重置</string>
+    <string name="stop">停止</string>
+    <string name="dynamic_text">dynamic_text</string>
+    <string name="jumpToEmail">转跳到发送邮件页面</string>
+    <string name="jump">转跳到下一个页面</string>
+    <string name="jumpToDataTransfer">转跳到数据传输页面</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="email_activity_name">发送邮件页面</string>
+    <string name="send">发送</string>
+    <string name="visit_web">访问一个网页</string>
+    <string name="email_content">This is the content of the Email</string>
+    <string name="title_activity_data_transfer">数据传输页面</string>
+    <string name="data_transfer_activity">数据传输页面</string>
+    <string name="data_sub_activity">传递数据到下一个页面</string>
+    <string name="title_activity_data_transfer_sub">主页面传来参数</string>
+    <string name="title_activity_data_transfer_return">子页面返回参数到主页面</string>
+    <string name="data_transfer_return">等待数据从下个页面返回</string>
+    <string name="back">返回</string>
+    <string name="title_activity_service">Service页面</string>
+
+	<string name="start_service">开始服务</string>
+	<string name="stop_service">停止服务</string>
+
+</resources>
