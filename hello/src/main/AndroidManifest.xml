@@ -7,6 +7,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -43,7 +45,30 @@
             android:label="@string/title_activity_service" >
         </activity>
 
-	    <service android:enabled="true" android:name=".TrackService"/>
+        <service
+            android:name="com.lish.helloworld.app.TrackService"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.lish.helloworld.app.BroadcastActivity"
+            android:label="@string/title_activity_broadcast" >
+        </activity>
+        <activity
+            android:name="com.lish.helloworld.app.BroadcastSubActivity"
+            android:label="@string/title_activity_broadcast_sub" >
+        </activity>
+        <activity
+            android:name="com.lish.helloworld.app.ContactActivity"
+            android:label="@string/title_activity_contact" >
+        </activity>
+        <activity
+            android:name="com.lish.helloworld.app.FragmentTestActivity"
+            android:label="@string/title_activity_fragment_test" >
+        </activity>
+        <activity
+            android:name="com.lish.helloworld.app.ListViewActivity"
+            android:label="@string/title_activity_list_view" >
+        </activity>
     </application>
 
 </manifest>

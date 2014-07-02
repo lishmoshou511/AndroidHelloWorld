@@ -90,4 +90,48 @@
 		android:layout_alignParentRight="true"
 		android:layout_alignParentEnd="true"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_broadcast"
+        android:id="@+id/broadcastBtn"
+        android:layout_below="@+id/serviceBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_contact"
+        android:id="@+id/contactBtn"
+        android:layout_below="@+id/broadcastBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/broadcastBtn"
+        android:layout_alignEnd="@+id/broadcastBtn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_fragment_test"
+        android:id="@+id/fragmentBtn"
+        android:layout_below="@+id/contactBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/contactBtn"
+        android:layout_alignEnd="@+id/contactBtn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_list_view"
+        android:id="@+id/listViewBtn"
+        android:layout_below="@+id/fragmentBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>

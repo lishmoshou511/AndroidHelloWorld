@@ -23,8 +23,18 @@
     <string name="data_transfer_return">等待数据从下个页面返回</string>
     <string name="back">返回</string>
     <string name="title_activity_service">Service页面</string>
-
-	<string name="start_service">开始服务</string>
-	<string name="stop_service">停止服务</string>
+    <string name="start_service">开始服务</string>
+    <string name="stop_service">停止服务</string>
+    <string name="title_activity_broadcast">广播页面</string>
+    <string name="title_activity_broadcast_sub">广播子页面</string>
+    <string name="start_broadcast">开始广播</string>
+    <string name="title_activity_contact">联系人页面</string>
+    <string name="pick_contack">选择联系人</string>
+    <string name="hello_blank_fragment">你好，Fragment</string>
+    <string name="title_activity_fragment_test">Fragment测试页面</string>
+    <string name="artical_list_fragment">这里是文章列表</string>
+    <string name="item1">项目1</string>
+    <string name="title_activity_list_view">ListView控件</string>
+    <string name="helloworld">世界你好</string>
 
 </resources>

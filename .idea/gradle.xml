@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/hello" />
+            <option value="E:\Source\AndroidStudio\HelloWorld" />
+            <option value="E:\Source\AndroidStudio\HelloWorld\hello" />
           </set>
         </option>
       </GradleProjectSettings>

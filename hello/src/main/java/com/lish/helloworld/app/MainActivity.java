@@ -38,6 +38,18 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
 	private Button serviceBtn;
 
+    //广播页面
+    private Button broadcastBtn;
+
+    //联系人页面
+    private Button contactBtn;
+
+    //Fragment测试页面
+    private Button fragmentBtn;
+
+    //listView控件
+    private Button listViewBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -116,6 +128,46 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 		    }
 	    });
 
+        //转调到广播页面
+        broadcastBtn=(Button)findViewById(R.id.broadcastBtn);
+        broadcastBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,BroadcastActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //联系人页面
+        contactBtn=(Button)findViewById(R.id.contactBtn);
+        contactBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,ContactActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //Fragment测试页面
+        fragmentBtn=(Button)findViewById(R.id.fragmentBtn);
+        fragmentBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,FragmentTestActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //listView页面
+        listViewBtn=(Button)findViewById(R.id.listViewBtn);
+        listViewBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,ListViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
     }
@@ -149,6 +201,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         int id = item.getItemId();
         if (id == R.id.action_settings) {
             return true;
+        }
+        else if(id==R.id.item1){
+            Log.i(this.getClass().getName(),"点击项目1");
         }
         return super.onOptionsItemSelected(item);
     }
